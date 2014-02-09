@@ -1,9 +1,13 @@
-<h2>
-  Surveys
-  <% if can_administer? %>
+<div class="large-12 columns">
+<div class="row">
+          <div class="large-12 columns">
+            <h2 class="section-header">Available Surveys
+              <% if can_administer? %>
     <%= link_to "New Survey", new_question_group_path %>
-  <% end %>
-</h2>
+  <% end %></h2>
+          </div>
+        </div>
+
 <hr/>
 
 <table>
